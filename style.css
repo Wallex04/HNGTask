@@ -1,0 +1,323 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px 100px;
+    margin-bottom: 20px;
+   /* width: 100%; */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.NavHome a {
+    padding: 0 20px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+a {
+    padding: auto;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+#slackProfile {
+    display: block;
+    text-align: center;
+}
+
+.profile img{
+    width: 80px;
+    height: 70px;
+}
+
+#info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mission {
+    display: flex;
+    padding: 0 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.mission div {
+    flex: 1;
+}
+
+.mission .imgDiv {
+    flex: 1;
+}
+
+.mission img {
+    width: 100%;
+    height: 100%;
+}
+
+#goals li {
+    list-style-type: none;
+    line-height: 25px;
+}
+.hngHover:hover {
+    background-color: chocolate;
+    color: white;
+}
+
+#info p, #links p {
+    margin: 5px 0;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #4cae4c;
+}
+
+
+
+.aboutHead {
+    padding-left: 50px;
+    text-align: center;
+}
+
+.About {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+    text-align: center;
+}
+
+.about-text p {
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-size: 17px;
+    color: chocolate;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Set the desired maximum height */
+    border-radius: 20px;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: chocolate;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: darkorange;
+}
+
+@media (max-width: 768px) {
+    .About {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .aboutHead {
+        padding-left: 0;
+    }
+
+    .about-text {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-text p {
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 1px;
+    }
+}
+
+
+
+@media (max-width: 800px) {
+    .contact-form {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 10px;
+    }
+
+    #slackProfile img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #info {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .mission {
+        flex-direction: column;
+    }
+
+    .mission .imgDiv {
+        display: block;
+        width: 100%;
+    }
+
+    .mission img {
+        width: 100%;
+    }
+
+    h1, h2 {
+        font-size: 16px;
+    }
+
+    footer div {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .About {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .aboutHead {
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    /* .About div {
+        margin: 0 auto;
+    } */
+
+    /* .About p {
+        padding: 0 20px;
+    } */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: white;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links a {
+        padding: 15px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav.active .nav-links {
+        display: flex;
+    }
+     .mission {
+        padding: 0px;
+        padding-top: 40px;
+    }
+    nav {
+        padding: 0px;
+        margin: 0;
+        width: 100%;
+    }
+}
