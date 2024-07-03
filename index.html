@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TECH GOALS</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <nav>
-            <a class="profile" href="slackProfile" to="/slack">
+            <a style="display: flex; flex-direction: column; color: chocolate;" class="profile" href="slackProfile" to="/slack">Wallex
                 <img src="Images/WALLEXEDIT.jpg" alt="profileImage">
             </a>
             <button class="hamburger" aria-label="Toggle navigation">
@@ -18,13 +19,10 @@
             </button>
             <div class="nav-links">
                 <a href="/index.html">Home</a>
-                <a href="/About.html">About</a>
-                <a href="/Contact.html">Contact</a>
-                <a href="/Goals.html">Goals</a>
             </div>
         </nav>
 
-        <div id="info">
+        <div id="info">~
             <div>
                 <p style="font-weight: 600; font-size: 20px;">Current Time (UTC): <span style="font-size: 25px; font-weight: 600; color: chocolate;" data-testid="currentTimeUTC"></span></p>
                 <p style="font-weight: 600; font-size: 20px;">Current Day: <span style="font-size: 25px; font-weight: 600; color: chocolate;" data-testid="currentDay"></span></p>
@@ -32,9 +30,19 @@
             <div>
                 <p style="font-weight: 600; font-size: 20px;">Slack Email: <span style="font-size: 15px; font-weight: 600; color: chocolate;" data-testid="slackEmail">akinwaleokunlola@gmail.com</span></p>
                 <p style="font-weight: 600; font-size: 20px;">Occupation: <span style="font-size: 15px; font-weight: 600; color: chocolate;" data-testid="occupation">Frontend Engineer</span></p>
+                <div style="padding: 0 20px;" class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank" class="social-icon"><i style="color: black;" class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/okunlola-akinwale-817151186/" target="_blank" class="social-icon"><i style="color: black;" class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon"><i style="color: black;" class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </div>
 
+        <div style="padding: 0 100px;" id="links">
+            <p><a style="font-weight: 600; color: rgb(45, 45, 232); font-style: italic;" href="https://hng.tech/learn" data-testid="hngLink">HNG Learn</a></p>
+            <p><a style="font-weight: 600; color: rgb(45, 45, 232); font-style: italic;" href="https://keyword.dog" data-testid="keywordLink">Keyword Dog</a></p>
+            <p><a style="font-weight: 600;" href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a></p>
+        </div>
         <div class="mission">
             <div>
                 <h1>About HNG</h1>
@@ -72,14 +80,6 @@
             </ul>
         </div>
 
-        <footer style="background-color: black; padding: 0 100px;">
-            <div style="display: flex; justify-content: space-between; align-items: center; color: white; padding: 10px;">
-                <a style="color: white; text-align: center;" href="/About.html">About us</a>
-                <a style="color: white; text-align: center;" href="/index.html">Home</a>
-                <a style="color: white; text-align: center;" href="/Goals.html">Target</a>
-                <a style="color: white; text-align: center;" href="/Contact.html">Contact us</a>
-            </div>
-        </footer>
     </div>
 
     <script src="index.js"></script>
